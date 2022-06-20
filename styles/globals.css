@@ -14,3 +14,38 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#daftarjual .profile-card .profile-name {
+  width: fit-content;
+  margin-left: 15px;
+  position: relative;
+  top: -5px;
+  left: 30px;
+  font-weight: bold;
+}
+
+#daftarjual .profile-card .profile-kota {
+  font-weight: lighter;
+  width: fit-content;
+  margin-left: 15px;
+  position: relative;
+  top: -10px;
+  left: 50px;
+}
+
+#daftarjual .profile-card .profile-button {
+  position: relative;
+  top: -40px;
+  right: 20px;
+}
+
+#daftarjual .profile-card .profile-img {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+#daftarjual .card-position .card-seller {
+  margin-left: 40px;
+  justify-content: space-around;
+}
