@@ -1,13 +1,25 @@
 const CardList = () => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div id="cardlist" className="card border border-3">
       <div className="card-body">
-        <p className="card-text fw-bold">Kategori</p>
-        <p className="semua-prod card-text">Semua Produk</p>
+        <p className="kategori card-text fw-bold">Kategori</p>
+        <p className="semua-prod card-text">
+          <a href="">
+            Semua Produk <i className="icon-gt fw-bold float-end">&gt;</i>
+          </a>
+        </p>
         <hr />
-        <p className="diminati card-text">Diminati</p>
+        <p className="diminati card-text">
+          <a href="">
+            Diminati <i className="icon-gt fw-bold float-end">&gt;</i>
+          </a>
+        </p>
         <hr />
-        <p className="terjual card-text">Terjual</p>
+        <p className="terjual card-text">
+          <a href="">
+            Terjual <i className="icon-gt fw-bold float-end">&gt;</i>
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -17,9 +17,9 @@ const DaftarJual = () => {
           <div className="col-12 d-flex mb-3">
             <p className="mt-5 h2 fw-bold">Daftar Jual Saya</p>
           </div>
-          <div className="container mb-4">
+          <div className="container mb-4 ">
             <div className="card-body p-0">
-              <div className="profile-card border rounded">
+              <div className="profile-card border border-3 rounded">
                 <div className="profile-img d-inline">
                   <img
                     src="images/image-casio1.png"
@@ -43,14 +43,46 @@ const DaftarJual = () => {
             </div>
           </div>
         </div>
+        <div className="hidden-button">
+          <button type="button" class="btn btn-primary">
+            Produk
+          </button>
+          <button type="button" class="btn btn-primary">
+            Diminati
+          </button>
+          <button type="button" class="btn btn-primary">
+            Primary
+          </button>
+        </div>
         <div className="card-position d-flex">
           <div className="card-list-seller">
             <CardList />
           </div>
-          <div className="card-seller d-flex">
-            <Card />
-            <Card />
-            <Card />
+          <div className="card-seller">
+            <div className="card-item">
+              <button
+                type="button"
+                className="button-card btn btn-outline-dark"
+              >
+                <p className="icon-plus m-0">+</p>
+                Tambah Produk
+              </button>
+            </div>
+            <div className="card-item">
+              <Card />
+            </div>
+            <div className="card-item">
+              <Card />
+            </div>
+            <div className="card-item">
+              <Card />
+            </div>
+            <div className="card-item">
+              <Card />
+            </div>
+            <div className="card-item">
+              <Card />
+            </div>
           </div>
         </div>
       </div>
