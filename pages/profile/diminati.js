@@ -1,7 +1,7 @@
-import Card from "../components/seller/card";
-import CardList from "../components/seller/cardlist";
+import Card from "../../components/seller/card";
+import CardList from "../../components/seller/cardlist";
 
-const DaftarJual = () => {
+const Diminati = () => {
   //   const contentStyle = {
   //     minHeight: "90vh",
   //     top: "56px",
@@ -22,7 +22,7 @@ const DaftarJual = () => {
               <div className="profile-card border border-3 rounded">
                 <div className="profile-img d-inline">
                   <img
-                    src="images/image-casio1.png"
+                    src="../images/image-casio1.png"
                     width="50"
                     height="50"
                     className="rounded"
@@ -51,38 +51,12 @@ const DaftarJual = () => {
             Diminati
           </button>
           <button type="button" class="btn btn-primary">
-            Primary
+            Terjual
           </button>
         </div>
         <div className="card-position d-flex">
           <div className="card-list-seller">
             <CardList />
-          </div>
-          <div className="card-seller">
-            <div className="card-item">
-              <button
-                type="button"
-                className="button-card btn btn-outline-dark"
-              >
-                <p className="icon-plus m-0">+</p>
-                Tambah Produk
-              </button>
-            </div>
-            <div className="card-item">
-              <Card />
-            </div>
-            <div className="card-item">
-              <Card />
-            </div>
-            <div className="card-item">
-              <Card />
-            </div>
-            <div className="card-item">
-              <Card />
-            </div>
-            <div className="card-item">
-              <Card />
-            </div>
           </div>
         </div>
       </div>
@@ -91,4 +65,4 @@ const DaftarJual = () => {
   );
 };
 
-export default DaftarJual;
+export default Diminati;
