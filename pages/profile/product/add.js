@@ -1,4 +1,13 @@
+import React, { useState } from "react";
+
 const Add = () => {
+  const [imgs, setImgs] = useState("");
+
+  const getImage = (e) => setImgs(URL.createObjectURL(e.target.files[0]));
+
+  const uploadFiles = () => {
+    document.getElementById("foto_produk").click();
+  };
   return (
     <div id="add" className="container content position-relative">
       <div className="row">
@@ -71,20 +80,30 @@ const Add = () => {
                 </div>
               </div>
               <div className="row">
-                <label className="form-label-foto" for="foto_produk">
-                  Foto Produk
-                  <br />
-                  <a class="btn-img" rel="nofollow">
-                    +
-                  </a>
-                </label>
-                <div>
-                  <input
-                    className="file-input"
-                    type="file"
-                    id="foto_produk"
-                    name="foto_produk"
-                  />
+                <div className="d-flex">
+                  <label
+                    onClick={uploadFiles}
+                    className="form-label-foto"
+                    for="foto_produk"
+                  >
+                    Foto Produk
+                    <br />
+                    <a class="btn-img" rel="nofollow">
+                      +
+                    </a>
+                  </label>
+                  <div className="prev-imgs">
+                    <img className="prev-img" src={imgs} />
+                  </div>
+                  <div>
+                    <input
+                      className="file-input"
+                      type="file"
+                      id="foto_produk"
+                      name="foto_produk"
+                      onChange={getImage}
+                    />
+                  </div>
                 </div>
               </div>
               <button type="button" className="btn-add">
