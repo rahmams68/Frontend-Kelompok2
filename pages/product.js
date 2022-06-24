@@ -74,8 +74,10 @@ const ProductInfo_Buyer = () => {
                         </div>
 
                         <h3>Harga Tawar</h3>
-                        <input type='number' placeholder='Rp 0,00'/>
-                        <button className={style.btnPurple}>Kirim</button>
+                        <form action='/' method='POST'>
+                            <input type='number' placeholder='Rp 0,00' required/>
+                        </form>
+                        <button type='button' className={style.btnPurple}>Kirim</button>
                     </div>
                 </div>
             </div>
