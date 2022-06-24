@@ -1,4 +1,45 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
+import { stripBasename } from "react-router/lib/router";
+
 const Edit = () => {
+  // const [name, setName] = useState("");
+  // const [price, setPrice] = useState("");
+  // const [category, setCategory] = useState("");
+  // const [desc, setDesc] = useState("");
+
+  const [imgs, setImgs] = useState("");
+
+  // const history = useRouter();
+  // const {id} = history.query
+
+  // const updateProduct = async (e) => {
+  //   //supaya tida reload
+  //   e.preventDefault();
+  //   await axios.post(`http://loaclhost:3000/${id}`, {
+  //     product_name: name,
+  //     product_price: price,
+  //     product_category: category,
+  //     product_desc: desc,
+  //     product_img: imgs,
+  //   });
+  //   history.push("/profile");
+  // };
+
+  // useEffect(() => {
+  //   getProductById();
+  // }, []);
+  // const getProductById = async () => {
+  //   const response = await axios.get(`http://localhost:3000/profile/${id}`);
+  //   stripBasename(response.data.name);
+  // };
+
+  const getImage = (e) => setImgs(URL.createObjectURL(e.target.files[0]));
+
+  const uploadFiles = () => {
+    document.getElementById("foto_produk").click();
+  };
   return (
     <div id="edit" className="container content position-relative">
       <div className="row">
@@ -45,12 +86,12 @@ const Edit = () => {
                   Kategori
                 </label>
                 <div>
-                  <select class="form-select" name="kategori">
+                  <select className="form-select" name="kategori">
                     <option selected hidden>
                       Pilih Kategori
                     </option>
                     <option value="Mobil">Mobil</option>
-                    <option value="Jam Tangan">Jam Tangan</option>
+                    <option value="Aksesoris">Jam Tangan</option>
                     <option value="Monitor">Monitor</option>
                     <option value="Motor">Motor</option>
                     <option value="Laptop">Laptop</option>

@@ -113,7 +113,15 @@ a {
   color: white;
   width: 200px;
 }
-
+/* component card */
+#cardSell p {
+  margin: 0px;
+}
+#cardSell .type-p {
+  font-size: 13px;
+  color: gray;
+  margin: 2px 0px 2px 0px;
+}
 /* component cardlist */
 #cardlist {
   width: 18rem;
