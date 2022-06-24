@@ -1,21 +1,8 @@
 import Carousel from 'react-elastic-carousel';
-import style from '../styles/Info.module.css';
-import { useState } from 'react';
-// import Images from '../components/ProductImages';
+import style from '../../../styles/Info.module.css';
+// import Images from '../../../../components/ProductImages';
 
-const ProductInfo_Buyer = () => {
-    const [displayClass, setDisplayClass] = useState(style.popupHide)
-
-    const changeDisplay = () => {
-        if(displayClass == style.popupHide) {
-            setDisplayClass(style.popupDisplay)
-        }
-
-        else {
-            setDisplayClass(style.popupHide)
-        }
-    }
-
+const ProductInfo_Seller = () => {
     return(
         <div className={style.productInfo}>
             {/* Import Navbar Component */}
@@ -43,7 +30,8 @@ const ProductInfo_Buyer = () => {
                     <h2>Product Name</h2>
                     <p>Category</p>
                     <h3>Product Price</h3>
-                    <button className={style.btnPurple} onClick={changeDisplay}>Saya tertarik dan ingin nego</button>
+                    <button className={style.btnPurple}>Terbitkan</button>
+                    <button className={style.btnWhite}>Edit</button>
                 </div>
                 
                 <div className={style.bottom}>
@@ -55,36 +43,10 @@ const ProductInfo_Buyer = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={displayClass}>
-                <div className={style.popupContainer}>
-                    <div className={style.popup}>
-                        <p onClick={changeDisplay}>X</p>
-
-                        <h1>Masukkan Harga Tawarmu</h1>
-                        <h2>Harga tawaranmu akan diketahui penjual. Jika penjual cocok, kamu akan segera dihubungi penjual.</h2>
-
-                        <div className={style.info}>
-                            <img src='/images/sample_product_big.png' alt='profileImage'/>
-                            
-                            <div>
-                                <h1>Jam Tangan Casio</h1>
-                                <h3>Rp 250.000</h3>
-                            </div>
-                        </div>
-
-                        <h3>Harga Tawar</h3>
-                        <form action='/' method='POST'>
-                            <input type='number' placeholder='Rp 0,00' required/>
-                        </form>
-                        <button type='button' className={style.btnPurple}>Kirim</button>
-                    </div>
-                </div>
-            </div>
             
             {/* Import footer component */}
         </div>
     )
 }
 
-export default ProductInfo_Buyer;
+export default ProductInfo_Seller;

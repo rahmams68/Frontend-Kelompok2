@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html,
 body {
   padding: 0;
@@ -101,7 +113,15 @@ a {
   color: white;
   width: 200px;
 }
-
+/* component card */
+#cardSell p {
+  margin: 0px;
+}
+#cardSell .type-p {
+  font-size: 13px;
+  color: gray;
+  margin: 2px 0px 2px 0px;
+}
 /* component cardlist */
 #cardlist {
   width: 18rem;
@@ -300,3 +320,88 @@ a {
     justify-content: space-between;
   }
 }
+
+/* login register profile fadil */
+
+
+
+.login-image {
+  width: 100%;
+  height: 97vh;
+}
+.register-image {
+  width: 100%;
+  height: 97vh;
+}
+.logo-image {
+  width: 120px;
+  height: 50px;
+}
+
+.purple-bg {
+  background-color: #7126b5 !important;
+}
+
+.purple-text{
+  color: #7126b5 !important;
+}
+
+.purple-outline{
+  border: 2px solid #7126b5 !important;
+  border-radius: 5px;
+  background-color: white !important;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #7126b5 !important;
+  color: #7126b5 !important;
+}
+
+.custom-rounded {
+  border-radius: 16px !important;
+}
+
+.plus-icon{
+  border: 2px dashed #D3D3D3;
+  padding: 35px;
+  border-radius: 5px;
+  margin-right: 170px;
+  color: #D3D3D3;
+}
+
+.camera-icon{
+  font-size: 30px;
+  padding: 50px;
+  border-radius: 10px;
+  color: #7126b5;
+  background-color: #E2D4F0;
+}
+
+.image-file{
+  display: none !important;
+  visibility: none !important;
+}
+
+.CamIcon{
+  text-align: center;
+}
+
+.pusher{
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 480px){
+  .title-visible{
+    visibility: visible !important;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .title-visible{
+    visibility: hidden;
+  }
+}
+
+
+

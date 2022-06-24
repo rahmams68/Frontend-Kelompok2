@@ -1,14 +1,24 @@
 import { NavbarProfile } from "../../components/navbar";
 import Card from "../../components/seller/card";
 import CardList from "../../components/seller/cardlist";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import Link from "next/link";
 
 const DaftarJual = () => {
-  //   const contentStyle = {
-  //     minHeight: "90vh",
-  //     top: "56px",
-  //     backgroundColor: "#f1f1f9",
-  //     overflowX: "hidden",
-  //   };
+  const [products, setProduct] = useState([]);
+
+  //memanggil func getproducts
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  // fetch data api
+  const getProducts = async () => {
+    const response = await axios.get("http://localhost:3000/");
+    // console.log(response.data);
+    setProduct(response.data);
+  };
 
   return (
     <div>
@@ -37,24 +47,32 @@ const DaftarJual = () => {
                   <font className="profile-kota ">Kota</font>
                 </div>
                 <div className="profile-button d-inline float-end mt-2">
-                  <button type="button" className="btn btn-outline-dark">
-                    Edit
-                  </button>
+                  <Link href={`/profile/edit/${products.id}`}>
+                    <button type="button" className="btn btn-outline-dark">
+                      Edit
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="hidden-button">
-          <button type="button" className="btn btn-primary">
-            Produk
-          </button>
-          <button type="button" className="btn btn-primary">
-            Diminati
-          </button>
-          <button type="button" className="btn btn-primary">
-            Terjual
-          </button>
+          <Link href="/profile/">
+            <button type="button" className="btn btn-primary">
+              Produk
+            </button>
+          </Link>
+          <Link href="/profile/diminati">
+            <button type="button" className="btn btn-primary">
+              Diminati
+            </button>
+          </Link>
+          <Link href="/profile/terjual">
+            <button type="button" className="btn btn-primary">
+              Terjual
+            </button>
+          </Link>
         </div>
         <div className="card-position d-flex">
           <div className="card-list-seller">
@@ -62,14 +80,21 @@ const DaftarJual = () => {
           </div>
           <div className="card-seller">
             <div className="card-item">
-              <button
-                type="button"
-                className="button-card btn btn-outline-dark"
-              >
-                <p className="icon-plus m-0">+</p>
-                Tambah Produk
-              </button>
+              <Link href="/profile/product/add">
+                <button
+                  type="button"
+                  className="button-card btn btn-outline-dark"
+                >
+                  <p className="icon-plus m-0">+</p>
+                  Tambah Produk
+                </button>
+              </Link>
             </div>
+            {/* {products.map((product, index) => (
+              <div className="card-item">
+                <Card />
+              </div>
+            ))} */}
             <div className="card-item">
               <Card />
             </div>
