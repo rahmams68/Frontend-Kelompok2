@@ -4,19 +4,19 @@ const CardList = () => {
       <div className="card-body">
         <p className="kategori card-text fw-bold">Kategori</p>
         <p className="semua-prod card-text">
-          <a href="">
+          <a href="/profile">
             Semua Produk <i className="icon-gt fw-bold float-end">&gt;</i>
           </a>
         </p>
         <hr />
         <p className="diminati card-text">
-          <a href="">
+          <a href="/profile/diminati">
             Diminati <i className="icon-gt fw-bold float-end">&gt;</i>
           </a>
         </p>
         <hr />
         <p className="terjual card-text">
-          <a href="">
+          <a href="/profile/terjual">
             Terjual <i className="icon-gt fw-bold float-end">&gt;</i>
           </a>
         </p>
