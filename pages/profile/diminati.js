@@ -1,3 +1,4 @@
+import { NavbarProfile } from "../../components/navbar";
 import Card from "../../components/seller/card";
 import CardList from "../../components/seller/cardlist";
 
@@ -11,6 +12,7 @@ const Diminati = () => {
 
   return (
     <div>
+      <NavbarProfile></NavbarProfile>
       {/* <Header /> */}
       <div id="daftarjual" className="container content position-relative">
         <div className="row">
@@ -55,8 +57,14 @@ const Diminati = () => {
           </button>
         </div>
         <div className="card-position d-flex">
-          <div className="card-list-seller">
+          <div className="card-list-seller me-3">
             <CardList />
+          </div>
+          <div className="">
+            <div>
+              <img src="../images/diminati.png" />
+              Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok
+            </div>
           </div>
         </div>
       </div>
