@@ -22,7 +22,7 @@ export function NavbarInfoProfil() {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Button variant="outline-light" href="/" className='me-5'>
-                    <img src="images/navbar.png"></img>
+                    <img src="../images/navbar.png"></img>
                 </Button>
                 <Container>
                     <h5 className='text-center'>Lengkapi Info Akun</h5>
@@ -42,7 +42,7 @@ export function NavbarInfoPenawar() {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Button variant="outline-light" href="/" className='me-5'>
-                    <img src="images/navbar.png"></img>
+                    <img src="../images/navbar.png"></img>
                 </Button>
                 <Container>
                     <h5 className='text-center'>Info Penawar</h5>
@@ -63,7 +63,7 @@ export function NavbarProfile() {
 			<Container>
 				<Navbar>
                 <Button variant="outline-light" href="/" className='me-5'>
-                    <img src="images/navbar.png"></img>
+                    <img src="../images/navbar.png"></img>
                 </Button>
                 <div className="search-box">
                     <input
@@ -74,7 +74,7 @@ export function NavbarProfile() {
                         className='background-#EEEEEE'
                     />
                     <button className="search-button">
-                        <img src="images/fi_search.png"></img>
+                        <img src="../images/fi_search.png"></img>
                     </button>
                 </div>
                 <style jsx>{`
@@ -151,13 +151,13 @@ export function NavbarProfile() {
                 <Navbar>
                     <ButtonGroup aria-label="Basic example" className=''>
                         <Button variant="outline-light" href="#">
-                            <img src="images/fi_list.png"></img>
+                            <img src="../images/fi_list.png"></img>
                         </Button>
                         <Button variant="outline-light" href="#">
-                            <img src="images/fi_bell.png"></img>
+                            <img src="../images/fi_bell.png"></img>
                         </Button>
                         <Button variant="outline-light" href="#">
-                            <img src="images/fi_user.png"></img>
+                            <img src="../images/fi_user.png"></img>
                         </Button>
                     </ButtonGroup>
                 </Navbar>
