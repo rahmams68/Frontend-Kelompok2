@@ -163,5 +163,5 @@ export function NavbarProfile() {
                 </Navbar>
 			</Container>
 		</Navbar>
-);
+    );
 };
