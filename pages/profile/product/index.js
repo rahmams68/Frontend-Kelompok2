@@ -1,12 +1,13 @@
 import Carousel from 'react-elastic-carousel';
 import style from '../../../styles/Info.module.css';
+import { NavbarProfile } from '../../../components/navbar';
 // import Images from '../../../../components/ProductImages';
 
 const ProductInfo_Seller = () => {
     return(
+        <>
+        <NavbarProfile></NavbarProfile>
         <div className={style.productInfo}>
-            {/* Import Navbar Component */}
-
             <div className={style.left}>
                 <div className={style.top}>
                     <Carousel className={style.carousel}>
@@ -46,6 +47,7 @@ const ProductInfo_Seller = () => {
             
             {/* Import footer component */}
         </div>
+        </>
     )
 }
 
