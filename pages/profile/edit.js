@@ -44,7 +44,7 @@ function Profile() {
             </Form.Group>
             <Form.Group controlId="kota" className="mt-3">
               <Form.Label className="fw-bold">Kota</Form.Label>
-              <Form.Control type="text" placeholder="Contoh: johndee@gmail.com" className="custom-rounded p-2" />
+              <Form.Control type="text" placeholder="Pilih Kota" className="custom-rounded p-2" />
             </Form.Group>
             <Form.Group controlId="alamat" className="mt-3">
               <Form.Label className="fw-bold">Alamat</Form.Label>
