@@ -2,19 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Toast from 'react-bootstrap/Toast';
 import React, { useState } from 'react';
-import ToastContainer from 'react-bootstrap/ToastContainer';
 
 export function NavbarDefault() {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
                 <Button variant="outline-light" href="/" className='me-5'>
-                    <img src="images/navbar.png"></img>
+                    <img src="../images/navbar.png"></img>
                 </Button>
             </Container>
         </Navbar>
@@ -167,7 +163,7 @@ export function NavbarProfile() {
                             <div className='ToastContainer'>
                                 <Toast className='Toast' onClose={() => setShow(false)} show={show}>
                                     <Toast.Body>
-                                        Woohoo, you're reading this text in a Toast!
+                                        Woohoo, Belum ada notifikasi !!
                                     </Toast.Body>
                                 </Toast>            
                             </div>
