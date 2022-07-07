@@ -337,6 +337,10 @@ a {
   width: 120px;
   height: 50px;
 }
+/* .seller_img{
+  width: 40px;
+  height: 40px;
+} */
 
 .purple-bg {
   background-color: #7126b5 !important;
@@ -389,6 +393,32 @@ a {
 .pusher{
   margin-left: 100px;
 }
+
+/* info penawar fadil */
+
+/* .navbar-brand{
+  margin-bottom: 33px !important;
+} */
+.logo{
+  margin-bottom: 35px !important;
+}
+/* .invisible-content{
+  visibility: hidden !important;
+} */
+/* .card-product{
+  width: 400px;
+  border-radius: 25px !important;
+  margin-top: -90px;
+} */
+.spacing{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.seller_img{
+  width: 40px;
+  height: 40px;
+}
+
 
 @media only screen and (max-width: 480px){
   .title-visible{
