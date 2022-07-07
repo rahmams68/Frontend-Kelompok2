@@ -1,3 +1,4 @@
+import { NavbarProfile } from "../../components/navbar";
 import Card from "../../components/seller/card";
 import CardList from "../../components/seller/cardlist";
 import { useState, useEffect } from "react";
@@ -21,6 +22,7 @@ const DaftarJual = () => {
 
   return (
     <div>
+      <NavbarProfile></NavbarProfile>
       {/* <Header /> */}
       <div id="daftarjual" className="container content position-relative">
         <div className="row">

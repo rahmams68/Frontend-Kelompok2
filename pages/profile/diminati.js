@@ -1,3 +1,4 @@
+import { NavbarProfile } from "../../components/navbar";
 import Card from "../../components/seller/card";
 import CardList from "../../components/seller/cardlist";
 
@@ -11,6 +12,7 @@ const Diminati = () => {
 
   return (
     <div>
+      <NavbarProfile></NavbarProfile>
       {/* <Header /> */}
       <div id="daftarjual" className="container content position-relative">
         <div className="row">
@@ -35,7 +37,7 @@ const Diminati = () => {
                   <font className="profile-kota ">Kota</font>
                 </div>
                 <div className="profile-button d-inline float-end mt-2">
-                  <button type="button" className="btn btn-outline-dark">
+                  <button type="button" className="btn btn-outline-dark" href="#">
                     Edit
                   </button>
                 </div>
@@ -55,8 +57,25 @@ const Diminati = () => {
           </button>
         </div>
         <div className="card-position d-flex">
-          <div className="card-list-seller">
-            <CardList />
+          <div className="card-list-seller me-5">
+            <CardList/>
+          </div>
+          <div>
+            <div className="wishlist">
+              <img src="../images/diminati.png" />
+              <p>
+                Belum ada produkmu yang diminati nih, sabar ya rejeki nggak kemana kok
+              </p>
+            </div>
+            <style jsx>{`
+              .wishlist {
+                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 40%;
+                margin-left: 230px;
+              }
+            `}</style>
           </div>
         </div>
       </div>
